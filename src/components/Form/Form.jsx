@@ -22,7 +22,7 @@ const Form = () => {
     return () => {
       tg.WebApp.offEvent("mainButtonClicked", onSendData);
     };
-  }, [onSendData]);
+  }, [onSendData, tg.WebApp]);
 
   useEffect(() => {
     tg.MainButton.setParams({
