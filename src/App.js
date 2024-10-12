@@ -10,10 +10,9 @@ function App() {
 
   const {onToggleButton, tg} = useTelegram();
 
-
   useEffect(() => {
-    tg.ready();
-  }, [tg]);
+      tg.ready();
+  }, [])
 
  
   return (
